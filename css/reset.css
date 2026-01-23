@@ -27,6 +27,10 @@ ol {
   padding: 0;
 }
 
+ul{
+  list-style: none;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
@@ -50,6 +54,9 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+}
 /* Make images easier to work with */
 img,
 picture {
