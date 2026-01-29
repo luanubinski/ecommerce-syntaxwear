@@ -4,9 +4,10 @@ body{
 }
 
 main{
-    padding: 2.5rem 0 0;
+    padding: 2.5rem 0 2.5rem;
     max-width: 1360px;
     margin: 0 auto;
+
 }
 
 .btn{
@@ -16,7 +17,7 @@ main{
     border-radius: 25px;
     color: #ffffff;
     font-weight: 400;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     transition: background-color 0.3s, border 0.3s;
 
 }
