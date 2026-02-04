@@ -1,5 +1,5 @@
-.card{
-      background-position: center;
+.card {
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -9,7 +9,7 @@
 
 .top1 {
   grid-area: top1;
-  background-image:url(../../images/products/modelo-masculino.jpg);
+  background-image: url(../../images/products/modelo-masculino.jpg);
 }
 
 .top2 {
@@ -27,13 +27,13 @@
 }
 
 .bottomL {
-    grid-area: bottomL;
-    background-image: url(../../images/products/preto-azul-grid.jpg);
+  grid-area: bottomL;
+  background-image: url(../../images/products/preto-azul-grid.jpg);
 }
 
 .bottomR {
   grid-area: bottomR;
-background-image: url(../../images/products/moderno-grid.jpg);
+  background-image: url(../../images/products/moderno-grid.jpg);
 }
 
 .grid-section {
@@ -47,29 +47,56 @@ background-image: url(../../images/products/moderno-grid.jpg);
   gap: 1.875rem;
 }
 
-.top1-content{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.top1-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.card-title{
-    color: #ededed ;
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin-bottom: 0.625rem;
+.card-title {
+  color: #ededed;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.625rem;
 }
 
-.card-subtitle{
-    color: #ededed;
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 1.25rem;
+.card-subtitle {
+  color: #ededed;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
 }
 
-.cta-group{
-    display: flex;
-    gap: 0.625rem;
+.cta-group {
+  display: flex;
+  gap: 0.625rem;
+}
+
+@media (max-width: 768px) {
+  .grid-section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "top1 top1"
+      "bottomL bottomL"
+      "midL midR"
+      "midL bottomR"
+      "top2 top2";
+      max-width: 100%;
+      gap: 0.625rem;
+  }
+
+  .top1 {
+    min-height: 500px;
+  }
+
+  .midL {
+    min-height: 370px;
+  }
+
+  .bottomL, .top2 {
+    min-height: 190px;
+  }
 }

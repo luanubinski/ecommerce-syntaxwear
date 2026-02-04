@@ -3,7 +3,7 @@
   position: fixed;
   top: 60px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%);
   width: calc(100% - 210px);
   border-radius: 15px;
   z-index: 999;
@@ -40,7 +40,7 @@
 }
 
 .nav-right img {
-  height: 24px;
+  height: 20px;
 }
 
 .nav-right a:hover img {
@@ -56,16 +56,14 @@
 
 .menu-toggle {
   display: none;
-  width: 30px;
-  height: 30px;
 }
 
 .menu-icon {
-width: 30px;
-height: 30px;
-display: none;
-cursor: pointer;
-z-index: 1001;
+  width: 30px;
+  height: 30px;
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .menu-icon img {
@@ -98,31 +96,31 @@ z-index: 1001;
     gap: 2rem;
     transition: right 0.3s ease;
     align-items: flex-start;
-
   }
 
-  .nav-center, .nav-right {
+  .nav-center,
+  .nav-right {
     width: 100%;
     text-align: center;
   }
 
-.nav-center ul, .nav-right ul {
+  .nav-center ul,
+  .nav-right ul {
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
-}
+  }
 
-
-.nav-center a, .nav-right a {
+  .nav-center a,
+  .nav-right a {
     width: 100%;
-    border-bottom: #eeeeee 1px solid;
+    border-bottom: 1px solid #eeeeee;
     padding: 0.3rem 0;
     font-size: 1rem;
     display: block;
-
   }
 
   .menu-toggle:checked ~ .nav-container {
     right: 0;
-  } 
+  }
 }
